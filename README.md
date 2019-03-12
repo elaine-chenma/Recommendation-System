@@ -22,17 +22,17 @@ Click to review [the notebook.](https://github.com/melodydadada/Recommendation-S
 **A Recommendation System with Surprise!**
 
 ### 2.1 [Colab Link](https://colab.research.google.com/drive/1xBFFFeDAoFtzvPUE3HG9ctWVO980frIc)
-### Objective
+### 2.2 Objective
 In this report, we aim to analyze steam data with userID, games they played, and number of hours they spent on each game.
 We used two methods to establish a collaborative filtering recommendation system:
 - User-based Collaborative Filtering
 - Item-based Collaborative Filtering
 
-### 2.2 Exploratory Data Analysis
+### 2.3 Exploratory Data Analysis
 There are 11350 unique userID and 3600 unique itemID. There is no rating data, but we can use number of hours user play the game as a measure of preference, which is the case of **implicit recommendation**.
 User rating for a game is denoted as the log transform of number of playing hours in order to scale the number.
 
-### 2.3 Modeling
+### 2.4 Modeling
 1. User-based Collaborative Filtering
 User-based Collaborative Filtering uses user ratings as the attributes of a user. By calculating cosine/Pearson similarity, the most similar users are found. Then items liked by similar users are recommended.
 
@@ -40,7 +40,7 @@ User-based Collaborative Filtering uses user ratings as the attributes of a user
 On the contrary, item-based Collaborative Filtering use user ratings as the attributes of an item. By calculating cosine/Pearson similarity, the most similar items are found and recommended.
 
 
-### 2.4 Recommendation for user
+### 2.5 Recommendation for user
 **Recommendation with Item-based Collaborative Filtering**
 Take game “Left 4 Dead 2” for example, if a user likes the game (meaning spending a lot of time on it), then based on item-based CF method, below games are recommended because user ratings behave very alike on these games:
 
