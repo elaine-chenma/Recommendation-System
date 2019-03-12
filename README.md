@@ -10,7 +10,7 @@ For TMDB dataset, we will mainly use Popularity-based and Content-based methods.
 
 Besides the application of each method in recommendation system, pros and cons are discussed in the notebook.
 
-## Popularity-based & Content-based Recommendation
+## 1. Popularity-based & Content-based Recommendation
 
 This project works on [TMDB data](https://www.kaggle.com/tmdb/tmdb-movie-metadata) to build up a movie recommendation system.
 
@@ -18,21 +18,21 @@ Due to the lack of user-product pair preferences, I used popularity-based recomm
 
 Click to review [the notebook.](https://github.com/melodydadada/Recommendation-System/blob/master/TMDB%20movie%20rating.ipynb) OR see [Kaggle kernel](https://www.kaggle.com/chenma/recommendation-system-with-tmdb-movie-data) directly
 
-## Colaborative-Filtering Method
+## 1. Colaborative-Filtering Method
 **A Recommendation System with Surprise!**
 
-### [Colab Link](https://colab.research.google.com/drive/1xBFFFeDAoFtzvPUE3HG9ctWVO980frIc)
+### 1. [Colab Link](https://colab.research.google.com/drive/1xBFFFeDAoFtzvPUE3HG9ctWVO980frIc)
 ### Objective
 In this report, we aim to analyze steam data with userID, games they played, and number of hours they spent on each game.
 We used two methods to establish a collaborative filtering recommendation system:
 - User-based Collaborative Filtering
 - Item-based Collaborative Filtering
 
-### Exploratory Data Analysis
+### 1. Exploratory Data Analysis
 There are 11350 unique userID and 3600 unique itemID. There is no rating data, but we can use number of hours user play the game as a measure of preference, which is the case of **implicit recommendation**.
 User rating for a game is denoted as the log transform of number of playing hours in order to scale the number.
 
-### Modeling
+### 1. Modeling
 1. User-based Collaborative Filtering
 User-based Collaborative Filtering uses user ratings as the attributes of a user. By calculating cosine/Pearson similarity, the most similar users are found. Then items liked by similar users are recommended.
 
@@ -40,7 +40,7 @@ User-based Collaborative Filtering uses user ratings as the attributes of a user
 On the contrary, item-based Collaborative Filtering use user ratings as the attributes of an item. By calculating cosine/Pearson similarity, the most similar items are found and recommended.
 
 
-### Recommendation for user
+### 1. Recommendation for user
 **Recommendation with Item-based Collaborative Filtering**
 Take game “Left 4 Dead 2” for example, if a user likes the game (meaning spending a lot of time on it), then based on item-based CF method, below games are recommended because user ratings behave very alike on these games:
 ![imge1](/images/Picture1.png)
